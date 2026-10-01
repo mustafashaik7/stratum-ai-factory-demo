@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "application_id": "patient-portal",
+  "contract_id": "PP-CTR-001",
+  "visibility": "public_not_holdout",
+  "scenarios": [
+    {
+      "id": "PP-TST-001",
+      "scenario": "successful_self_booking",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-002",
+      "scenario": "cross_patient_access_denied",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-003",
+      "scenario": "retry_without_duplicate",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-004",
+      "scenario": "concurrent_slot_race",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-005",
+      "scenario": "changed_slot_new_confirmation",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-006",
+      "scenario": "unknown_write_reconciliation",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-007",
+      "scenario": "manual_flow_without_assistant",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-008",
+      "scenario": "prompt_injection_no_policy_bypass",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-009",
+      "scenario": "expired_or_foreign_confirmation",
+      "execution_status": "not_run"
+    },
+    {
+      "id": "PP-TST-010",
+      "scenario": "timezone_and_daylight_saving",
+      "execution_status": "not_run"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+name: Scaffold validation
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Validate skeleton only
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate architecture links and sample contracts
+        run: python3 scripts/validate_scaffold.py

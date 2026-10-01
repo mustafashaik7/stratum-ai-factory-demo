@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "PP-CTR-001",
+  "requirement": "PP-REQ-001",
+  "approval_status": "draft",
+  "rules": [
+    "resolve_identity_server_side",
+    "reauthorize_every_operation",
+    "bind_confirmation_to_exact_proposal_and_subject",
+    "reject_expired_confirmation",
+    "atomic_authoritative_booking_or_request_only",
+    "bind_idempotency_key_to_subject_and_payload",
+    "reconcile_unknown_writes_before_retry",
+    "report_only_authoritative_status"
+  ],
+  "acceptance_ids": [
+    "PP-TST-001",
+    "PP-TST-002",
+    "PP-TST-003",
+    "PP-TST-004",
+    "PP-TST-005",
+    "PP-TST-006",
+    "PP-TST-007",
+    "PP-TST-008",
+    "PP-TST-009",
+    "PP-TST-010"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "implementation_status": "planned",
+  "missing_required_evidence": "block",
+  "stages": [
+    {
+      "id": "change_analysis",
+      "required": true,
+      "implementation_status": "planned"
+    },
+    {
+      "id": "software_verification",
+      "required": true,
+      "implementation_status": "planned"
+    },
+    {
+      "id": "ai_behavior_evaluation",
+      "required": true,
+      "implementation_status": "planned"
+    },
+    {
+      "id": "workflow_resilience",
+      "required": true,
+      "implementation_status": "planned"
+    },
+    {
+      "id": "independent_acceptance",
+      "required": true,
+      "implementation_status": "planned"
+    },
+    {
+      "id": "staged_release_validation",
+      "required": true,
+      "implementation_status": "planned"
+    }
+  ],
+  "ai_evaluation_policy": "explicit_not_applicable_only_when_no_ai_dependency; never_silent_skip",
+  "holdouts": "separate_access_controlled_environment",
+  "production_promotion_enabled": false
+}

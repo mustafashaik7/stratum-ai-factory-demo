@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "data_class": "synthetic_only",
+  "organization_id": "demo-org",
+  "patients": [
+    {
+      "id": "synthetic-patient-a"
+    },
+    {
+      "id": "synthetic-patient-b"
+    }
+  ],
+  "slots": [
+    {
+      "id": "synthetic-slot-001",
+      "status": "free",
+      "start": "2030-01-15T15:00:00Z",
+      "display_timezone": "America/Chicago"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "healthcare",
+  "version": "0.1.0",
+  "implementation_status": "planned",
+  "capabilities": [
+    "appointments.search",
+    "appointments.propose",
+    "appointments.confirm",
+    "operations.status"
+  ],
+  "contract": "contracts/appointment-booking.json",
+  "adapter_mode": "synthetic_only"
+}

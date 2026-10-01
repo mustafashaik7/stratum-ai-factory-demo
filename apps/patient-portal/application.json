@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "application_id": "patient-portal",
+  "status": "skeleton",
+  "data_class": "synthetic_only",
+  "domain_pack": "healthcare@0.1.0",
+  "runtime_contract": "stratum-capabilities@0.1.0",
+  "capabilities": [
+    "appointments.search",
+    "appointments.propose",
+    "appointments.confirm",
+    "operations.status"
+  ],
+  "assistant_enabled": false,
+  "production_enabled": false,
+  "acceptance_catalog": "../../verification/patient-portal.acceptance.json",
+  "architecture": "Architecture.md"
+}

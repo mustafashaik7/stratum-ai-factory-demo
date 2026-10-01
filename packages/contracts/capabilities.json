@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "stratum-capabilities",
+  "version": "0.1.0",
+  "implementation_status": "planned",
+  "capabilities": [
+    {
+      "id": "appointments.search",
+      "effect": "read",
+      "input": [
+        "filters"
+      ],
+      "output": [
+        "eligible_slots"
+      ],
+      "subject_source": "validated_server_session"
+    },
+    {
+      "id": "appointments.propose",
+      "effect": "create_proposal",
+      "input": [
+        "slot_id"
+      ],
+      "output": [
+        "proposal_id",
+        "bound_details",
+        "expires_at"
+      ],
+      "subject_source": "validated_server_session"
+    },
+    {
+      "id": "appointments.confirm",
+      "effect": "external_write",
+      "input": [
+        "proposal_id",
+        "patient_confirmation",
+        "idempotency_key"
+      ],
+      "output": [
+        "operation_id",
+        "status"
+      ],
+      "subject_source": "validated_server_session"
+    },
+    {
+      "id": "operations.status",
+      "effect": "read",
+      "input": [
+        "operation_id"
+      ],
+      "output": [
+        "status",
+        "authorized_result"
+      ],
+      "subject_source": "validated_server_session"
+    }
+  ]
+}

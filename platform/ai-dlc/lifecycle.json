@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "implementation_status": "planned",
+  "stages": [
+    "define",
+    "specify",
+    "build",
+    "verify",
+    "release",
+    "operate_and_improve"
+  ],
+  "max_automatic_repairs": 2,
+  "release_requires": [
+    "approved_requirement",
+    "versioned_candidate",
+    "mandatory_gate_evidence",
+    "human_approval"
+  ],
+  "release_bindings": [
+    "application_version",
+    "domain_pack_version",
+    "model_deployment",
+    "prompt_version",
+    "tool_schema_version",
+    "retrieval_version",
+    "policy_version",
+    "evaluation_suite_version"
+  ]
+}

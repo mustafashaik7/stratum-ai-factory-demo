@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "implementation_status": "planned",
+  "correlation_fields": [
+    "request_id",
+    "application_id",
+    "organization_pseudonym",
+    "workflow_id",
+    "release_version"
+  ],
+  "signals": [
+    "trace",
+    "reliability",
+    "ai_quality",
+    "cost",
+    "restricted_audit",
+    "business_outcome"
+  ],
+  "raw_prompt_logging": false,
+  "patient_content_logging": false,
+  "audit_sampling": false,
+  "retention_policy": "must_be_approved_before_pilot"
+}
