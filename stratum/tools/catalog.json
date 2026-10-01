@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "knowledge.search",
+      "effect": "read",
+      "policy": "read-only",
+      "implementation": "unbound",
+      "timeout_seconds": 30,
+      "input_contract": "knowledge.search.request.v1",
+      "output_contract": "knowledge.search.result.v1",
+      "requires_idempotency": false,
+      "credentials": "broker_managed"
+    },
+    {
+      "id": "workspace.patch",
+      "effect": "workspace_write",
+      "policy": "workspace",
+      "implementation": "unbound",
+      "timeout_seconds": 30,
+      "input_contract": "workspace.patch.request.v1",
+      "output_contract": "workspace.patch.result.v1",
+      "requires_idempotency": false,
+      "credentials": "broker_managed"
+    },
+    {
+      "id": "verification.run",
+      "effect": "read",
+      "policy": "read-only",
+      "implementation": "unbound",
+      "timeout_seconds": 30,
+      "input_contract": "verification.run.request.v1",
+      "output_contract": "verification.run.result.v1",
+      "requires_idempotency": false,
+      "credentials": "broker_managed"
+    },
+    {
+      "id": "capability.read",
+      "effect": "read",
+      "policy": "read-only",
+      "implementation": "unbound",
+      "timeout_seconds": 30,
+      "input_contract": "capability.read.request.v1",
+      "output_contract": "capability.read.result.v1",
+      "requires_idempotency": false,
+      "credentials": "broker_managed"
+    },
+    {
+      "id": "capability.write",
+      "effect": "external_write",
+      "policy": "user-confirmation",
+      "implementation": "unbound",
+      "timeout_seconds": 30,
+      "input_contract": "capability.write.request.v1",
+      "output_contract": "capability.write.result.v1",
+      "requires_idempotency": true,
+      "credentials": "broker_managed"
+    },
+    {
+      "id": "release.promote",
+      "effect": "release",
+      "policy": "release-approval",
+      "implementation": "unbound",
+      "timeout_seconds": 30,
+      "input_contract": "release.promote.request.v1",
+      "output_contract": "release.promote.result.v1",
+      "requires_idempotency": true,
+      "credentials": "broker_managed"
+    }
+  ]
+}

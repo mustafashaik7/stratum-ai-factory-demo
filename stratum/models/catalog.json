@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "general",
+      "provider": "unbound",
+      "endpoint": null,
+      "model_version": null,
+      "enabled": false,
+      "allowed_data_classes": [
+        "synthetic"
+      ],
+      "max_output_tokens": 2048,
+      "timeout_seconds": 30,
+      "fallback": "fail_closed"
+    }
+  ]
+}

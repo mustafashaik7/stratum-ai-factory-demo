@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "knowledge.search.request.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "authenticated_context_ref",
+        "payload"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "knowledge.search.result.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "status",
+        "result",
+        "error"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "workspace.patch.request.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "authenticated_context_ref",
+        "payload"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "workspace.patch.result.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "status",
+        "result",
+        "error"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "verification.run.request.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "authenticated_context_ref",
+        "payload"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "verification.run.result.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "status",
+        "result",
+        "error"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "capability.read.request.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "authenticated_context_ref",
+        "payload"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "capability.read.result.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "status",
+        "result",
+        "error"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "capability.write.request.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "authenticated_context_ref",
+        "payload",
+        "approval_ref",
+        "proposal_digest",
+        "idempotency_key"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "capability.write.result.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "status",
+        "result",
+        "error"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "release.promote.request.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "authenticated_context_ref",
+        "payload",
+        "approval_ref",
+        "proposal_digest",
+        "idempotency_key"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    },
+    {
+      "id": "release.promote.result.v1",
+      "format": "design_descriptor",
+      "required_fields": [
+        "request_id",
+        "trace_id",
+        "release_id",
+        "status",
+        "result",
+        "error"
+      ],
+      "additional_fields": "reject_unless_versioned",
+      "note": "Runtime schemas and payload validation remain to be implemented."
+    }
+  ]
+}

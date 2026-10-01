@@ -3,6 +3,7 @@
 | Milestone | Status | Required evidence |
 |---|---|---|
 | M0: architecture and scaffold | Complete | Component boundaries, sample contracts, acceptance catalog, scaffold validation |
+| M0b: independent platform and agentic plumbing | Blueprint complete; unbound | Standalone composition validation and explicit Cloud–Core–Edge design |
 | M1: runtime capability contracts | Planned | Authenticated synthetic context, proposal/confirmation/status APIs, contract tests |
 | M2: healthcare booking pack | Planned | Atomic mock scheduler, duplicate protection, pending reconciliation, authorization tests |
 | M3: thin patient experience | Planned | Accessible manual booking UI consuming SDK/APIs without domain logic |

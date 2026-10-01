@@ -1,56 +1,55 @@
 # Stratum AI Factory Demo
 
-A reusable foundation for building, verifying, running, and observing AI-enabled applications. The Patient Portal is the first thin consumer.
+Stratum is an independent, reusable AI platform blueprint. Applications remain thin consumers.
 
-**Status: architecture and repository skeleton.** The only executable capability currently included is scaffold validation. No application, model integration, identity service, booking API, AI lifecycle engine, evaluation runner, or observability backend is implemented. Passing CI validates repository structure, not healthcare behavior or production readiness.
+**Status:** declarative plumbing and executable structural validation. No model, cloud, agent runner, identity service, policy engine, booking service, database, collector, or application UI is connected or implemented.
 
-## Start here
+## Architecture
 
-- [Platform architecture](Architecture.md)
+![Cloud–Core–Edge solution model](docs/diagrams/stratum-solution-architecture.svg)
+
+- [Stratum architecture](stratum/Architecture.md)
 - [Patient Portal architecture](apps/patient-portal/Architecture.md)
-- [Implementation roadmap](docs/ROADMAP.md)
-- [Platform/application boundaries](docs/decisions/0001-thin-applications.md)
-- [Contributor guide](CONTRIBUTING.md)
+- [Reference research and tailored design](docs/research/architecture-reference-mapping.md)
+- [Roadmap](docs/ROADMAP.md)
 
-## Repository layout
+## Structure
 
 ```text
-platform/
-  ai-dlc/                # Requirements through delivery and improvement
-  ai-qe/                 # Shared software and AI evaluation pipelines
-  observability/         # Traces, quality, cost, audit, alerts and outcomes
-  runtime/               # Capability gateway, authorization and workflows
-packages/
-  contracts/             # Versioned platform consumption contracts
-  client-sdk/            # Future thin client library
-  ui/                    # Future shared experience components
-  domain-packs/
-    healthcare/          # Booking rules, adapters and domain scenarios
-apps/
-  patient-portal/         # Experience configuration and future UI
-examples/synthetic/      # Synthetic fixtures only
-infra/                   # Future local and deployed infrastructure
-scripts/                 # Executable scaffold validation
-verification/            # Public acceptance catalog; not private holdouts
-.github/workflows/       # Scaffold CI only
+stratum/                    # Independent platform root
+  Architecture.md
+  blueprint.json            # Composition manifest; execution disabled
+  agents/ prompts/ skills/  # Versioned behavior and roles
+  orchestration/ tools/     # Bounded graphs and authorized operations
+  models/ data/ memory/     # Inference, knowledge and state boundaries
+  policies/ registry/       # Governance and immutable release bindings
+  lifecycle/ai-dlc/          # Shared delivery lifecycle
+  lifecycle/ai-qe/           # Shared tests and AI evaluations
+  observability/            # Agent, model, infrastructure and business signals
+  runtime/                  # Capability gateway and services
+  contracts/ sdk/           # Public contracts and thin-client boundaries
+  domain-packs/healthcare/   # Optional healthcare extension
+  infrastructure/           # Local, hybrid and distributed profiles
+  scripts/                  # Standalone blueprint validation
+apps/patient-portal/         # Experience configuration and future UI only
+docs/                       # Solution diagram, research and decisions
+verification/               # Public unexecuted scenarios; not private holdouts
+examples/synthetic/         # Invented fixtures only
+scripts/                    # Repository-wide integration validation
 ```
 
-## Validate locally
+## Validate
 
-Requires Python 3.10 or later; no third-party packages or credentials.
+Python 3.10+; no dependencies, credentials or GPU required.
 
 ```sh
+python3 stratum/scripts/validate_blueprint.py
 python3 scripts/validate_scaffold.py
+python3 -m unittest discover -s tests -v
 ```
 
-## Architectural rule
+The first validator can run with only the stratum/ directory present. Checks cover local references, tool permissions, graph reachability, write-approval checkpoints, bounded execution and disabled provider bindings. They do not execute workflows or prove runtime security. Repository checks additionally validate application/domain contracts and links.
 
-The portal renders options, collects explicit confirmation, and displays authoritative results. Stratum services execute workflows, enforce identity and authorization, run healthcare integrations, and manage AI, quality engineering, and observability. Healthcare-specific logic belongs to a versioned domain pack; the core remains generic.
+Use synthetic data only. The delivery plane builds releases; the runtime plane serves applications. A portal owns screens and presentation, while Stratum supplies business capability services through optional domain packs. The generic core has no dependency on apps/.
 
-The delivery control plane builds releases. The runtime plane serves patient requests independently of delivery-service availability. Optional AI failure does not disable deterministic booking; runtime booking-service failure requires an unavailable or pending state.
-
-## First demonstration to implement
-
-Deliver one synthetic appointment-booking journey through shared AI DLC and AI QE, then trace it through shared observability. Demonstrate patient isolation, duplicate protection, concurrency, uncertain-result reconciliation, and manual fallback. See the roadmap for acceptance milestones.
-
-Use synthetic data only. No production credentials or patient information belong in this repository. Model, UI, backend, cloud, and vendor implementations remain replaceable decisions.
+The deployment progression is Deploy → Interconnect → Extend. Begin with one synthetic workflow; connect approved systems only after verification; extend by application and region based on evidence. No vendor hardware configuration or production readiness is claimed.

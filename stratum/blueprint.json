@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "stratum",
+  "version": "0.1.0",
+  "execution_enabled": false,
+  "registries": {
+    "agents": "agents/catalog.json",
+    "prompts": "prompts/catalog.json",
+    "tools": "tools/catalog.json",
+    "skills": "skills/catalog.json",
+    "models": "models/catalog.json",
+    "memory": "memory/catalog.json",
+    "policies": "policies/catalog.json",
+    "workflows": "orchestration/catalog.json",
+    "data": "data/catalog.json",
+    "registry": "registry/catalog.json",
+    "telemetry": "observability/agentic-contract.json",
+    "deployment": "infrastructure/profiles.json",
+    "messages": "contracts/messages.json"
+  }
+}

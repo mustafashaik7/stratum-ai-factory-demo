@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "planner",
+      "file": "planner.md",
+      "version": "0.1.0"
+    },
+    {
+      "id": "builder",
+      "file": "builder.md",
+      "version": "0.1.0"
+    },
+    {
+      "id": "verifier",
+      "file": "verifier.md",
+      "version": "0.1.0"
+    },
+    {
+      "id": "assistant",
+      "file": "assistant.md",
+      "version": "0.1.0"
+    }
+  ]
+}

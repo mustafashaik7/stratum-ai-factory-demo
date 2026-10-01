@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "approved-knowledge",
+      "source": "unbound",
+      "data_class": "synthetic",
+      "pipeline": [
+        "authorize_source",
+        "classify",
+        "extract",
+        "chunk",
+        "index",
+        "verify",
+        "publish"
+      ],
+      "query_access": "filter_before_retrieval",
+      "lineage": [
+        "source_id",
+        "source_revision",
+        "index_revision",
+        "acl_revision"
+      ],
+      "deletion": "propagate_to_chunks_indexes_caches",
+      "automatic_training": false
+    }
+  ]
+}

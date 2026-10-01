@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "delivery",
+      "start": "plan",
+      "max_steps": 8,
+      "timeout_seconds": 600,
+      "on_failure": "blocked",
+      "nodes": [
+        {
+          "id": "plan",
+          "kind": "agent",
+          "ref": "planner",
+          "next": "build"
+        },
+        {
+          "id": "build",
+          "kind": "agent",
+          "ref": "builder",
+          "next": "verify"
+        },
+        {
+          "id": "verify",
+          "kind": "agent",
+          "ref": "verifier",
+          "next": "approve"
+        },
+        {
+          "id": "approve",
+          "kind": "approval",
+          "ref": "release-approval",
+          "next": "promote"
+        },
+        {
+          "id": "promote",
+          "kind": "tool",
+          "ref": "release.promote",
+          "next": "done"
+        },
+        {
+          "id": "done",
+          "kind": "terminal"
+        },
+        {
+          "id": "blocked",
+          "kind": "terminal"
+        }
+      ]
+    },
+    {
+      "id": "assisted-request",
+      "start": "assist",
+      "max_steps": 6,
+      "timeout_seconds": 120,
+      "on_failure": "blocked",
+      "nodes": [
+        {
+          "id": "assist",
+          "kind": "agent",
+          "ref": "assistant",
+          "next": "confirm"
+        },
+        {
+          "id": "confirm",
+          "kind": "approval",
+          "ref": "user-confirmation",
+          "next": "execute"
+        },
+        {
+          "id": "execute",
+          "kind": "tool",
+          "ref": "capability.write",
+          "next": "done"
+        },
+        {
+          "id": "done",
+          "kind": "terminal"
+        },
+        {
+          "id": "blocked",
+          "kind": "terminal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc"><title id="title">Stratum distributed AI architecture</title><desc id="desc">Cloud services connect to the Stratum core. Thin applications, enterprise systems and operators consume the core. Deploy, interconnect and extend in phases.</desc><rect width="1600" height="1080" fill="#f5f7fb"/>
+<text x="40" y="46" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#187d8d">STRATUM</text>
+<text x="40" y="96" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#102b46">Distributed AI foundation. Thin applications.</text>
+<text x="40" y="131" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#334155">Cloud–Core–Edge solution blueprint | All integrations unbound | 01 October 2026</text>
+<rect x="35" y="165" width="275" height="665" rx="14" fill="#eaf0f8" stroke="#ced7e2" stroke-width="2"/>
+<rect x="355" y="165" width="810" height="665" rx="14" fill="#e8f3f4" stroke="#9ac4c8" stroke-width="2"/>
+<rect x="1210" y="165" width="355" height="665" rx="14" fill="#edf0f7" stroke="#ced7e2" stroke-width="2"/>
+<text x="55" y="207" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#15395b">CLOUD</text>
+<text x="375" y="207" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#0c606b">CORE / STRATUM</text>
+<text x="1230" y="207" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#15395b">EDGE</text>
+<text x="55" y="231" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#334155">Optional managed services</text>
+<text x="375" y="231" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#334155">Reusable platform + governed data</text>
+<text x="1230" y="231" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#334155">Consumers and enterprise systems</text>
+<rect x="55" y="263" width="235" height="155" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="73" y="299" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Inference providers</text>
+<text x="73" y="332" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Approved endpoints</text>
+<text x="73" y="359" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Model/version controls</text>
+<text x="73" y="386" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">No provider selected</text>
+<rect x="55" y="448" width="235" height="135" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="73" y="484" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Cloud resources</text>
+<text x="73" y="517" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Artifacts and capacity</text>
+<text x="73" y="544" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Approved data placement</text>
+<rect x="55" y="613" width="235" height="155" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="73" y="649" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Connection policy</text>
+<text x="73" y="682" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Authenticated transport</text>
+<text x="73" y="709" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Explicit egress allowlist</text>
+<text x="73" y="736" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Data-class restrictions</text>
+<rect x="380" y="260" width="760" height="65" rx="14" fill="#d8eaf0" stroke="#ced7e2" stroke-width="2"/>
+<text x="398" y="296" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Capability gateway + identity + policy</text>
+<rect x="380" y="350" width="370" height="160" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="398" y="386" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Agent and workflow services</text>
+<text x="398" y="419" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Agents, skills and tool broker</text>
+<text x="398" y="446" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Bounded graphs and approvals</text>
+<text x="398" y="473" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Healthcare pack + adapters</text>
+<rect x="770" y="350" width="370" height="160" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="788" y="386" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Governed data services</text>
+<text x="788" y="419" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Ingestion, retrieval and lineage</text>
+<text x="788" y="446" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Scoped memory + checkpoints</text>
+<text x="788" y="473" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Versioned artifacts and evidence</text>
+<rect x="380" y="535" width="370" height="130" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="398" y="571" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">AI DLC + AI QE</text>
+<text x="398" y="604" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Build, evaluate and release</text>
+<text x="398" y="631" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Independent acceptance gates</text>
+<rect x="770" y="535" width="370" height="130" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="788" y="571" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">AI Observability</text>
+<text x="788" y="604" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Traces, quality, audit and cost</text>
+<text x="788" y="631" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Infrastructure + task outcomes</text>
+<rect x="380" y="690" width="760" height="112" rx="14" fill="#d8eaf0" stroke="#ced7e2" stroke-width="2"/>
+<text x="398" y="726" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Deployment foundation</text>
+<text x="398" y="759" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">CPU/GPU options • storage • networking • resource quotas</text>
+<text x="398" y="786" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Local demo → hybrid pilot → regional runtime/data cells</text>
+<rect x="1230" y="263" width="315" height="130" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="1248" y="299" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Patient Portal</text>
+<text x="1248" y="332" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Screens and configuration</text>
+<text x="1248" y="359" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Calls versioned capability APIs</text>
+<rect x="1230" y="425" width="315" height="165" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="1248" y="461" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Enterprise systems</text>
+<text x="1248" y="494" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Identity, EHR and scheduler</text>
+<text x="1248" y="521" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Authoritative records</text>
+<text x="1248" y="548" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Adapters enforce scoped access</text>
+<rect x="1230" y="623" width="315" height="145" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="1248" y="659" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">Platform and domain teams</text>
+<text x="1248" y="692" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Approve rules and releases</text>
+<text x="1248" y="719" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Review quality and outcomes</text>
+<text x="1248" y="746" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Future application consumers</text>
+<polyline points="310,294 355,294" fill="none" stroke="#3977bd" stroke-width="3"/>
+<polygon points="355,294 346,289 346,299" fill="#3977bd"/>
+<polyline points="1210,294 1165,294" fill="none" stroke="#3977bd" stroke-width="3"/>
+<polygon points="1165,294 1174,289 1174,299" fill="#3977bd"/>
+<polyline points="1140,452 1210,452" fill="none" stroke="#3977bd" stroke-width="3"/>
+<polygon points="1210,452 1201,447 1201,457" fill="#3977bd"/>
+<polyline points="750,422 770,422" fill="none" stroke="#3977bd" stroke-width="3"/>
+<polygon points="770,422 761,417 761,427" fill="#3977bd"/>
+<polyline points="590,325 590,350" fill="none" stroke="#3977bd" stroke-width="3"/>
+<polygon points="590,350 585,341 595,341" fill="#3977bd"/>
+<polyline points="945,510 945,535" fill="none" stroke="#3977bd" stroke-width="3"/>
+<polygon points="945,535 940,526 950,526" fill="#3977bd"/>
+<polyline points="565,510 565,535" fill="none" stroke="#3977bd" stroke-width="3"/>
+<polygon points="565,535 560,526 570,526" fill="#3977bd"/>
+<polyline points="1210,656 1186,656 1186,604 1140,604" fill="none" stroke="#7c849c" stroke-width="3" stroke-dasharray="6 5"/>
+<polygon points="1140,604 1149,599 1149,609" fill="#7c849c"/>
+<text x="42" y="864" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#187d8d">DELIVERY PROGRESSION</text>
+<rect x="40" y="879" width="487" height="114" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="58" y="915" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">1  DEPLOY</text>
+<text x="58" y="948" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">One synthetic journey + evaluated contracts</text>
+<text x="58" y="975" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Identity boundaries and correlated evidence</text>
+<rect x="556" y="879" width="487" height="114" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="574" y="915" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">2  INTERCONNECT</text>
+<text x="574" y="948" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Approved identity, data and scheduling</text>
+<text x="574" y="975" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Validate policy, recovery and support</text>
+<rect x="1072" y="879" width="488" height="114" rx="14" fill="#fff" stroke="#ced7e2" stroke-width="2"/>
+<text x="1090" y="915" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#15395b">3  EXTEND</text>
+<text x="1090" y="948" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Second application, then justified regions</text>
+<text x="1090" y="975" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Compatibility, residency and capacity tests</text>
+<text x="42" y="1038" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#334155">Logical architecture, not a hardware bill of materials or a validated production deployment.</text>
+</svg>

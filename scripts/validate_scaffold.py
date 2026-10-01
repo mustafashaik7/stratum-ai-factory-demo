@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import runpy
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -14,12 +15,13 @@ def read_json(path):
     return json.loads((ROOT / path).read_text())
 
 def validate():
+    runpy.run_path(str(ROOT / "stratum/scripts/validate_blueprint.py"), run_name="__main__")
     required = [
-        'Architecture.md', 'apps/patient-portal/Architecture.md',
-        'platform/ai-dlc/README.md', 'platform/ai-qe/README.md',
-        'platform/observability/README.md', 'platform/runtime/README.md',
-        'packages/client-sdk/README.md', 'packages/ui/README.md',
-        'packages/domain-packs/healthcare/README.md', 'docs/ROADMAP.md',
+        'stratum/Architecture.md', 'apps/patient-portal/Architecture.md',
+        'stratum/lifecycle/ai-dlc/README.md', 'stratum/lifecycle/ai-qe/README.md',
+        'stratum/observability/README.md', 'stratum/runtime/README.md',
+        'stratum/sdk/client/README.md', 'stratum/sdk/ui/README.md',
+        'stratum/domain-packs/healthcare/README.md', 'docs/ROADMAP.md',
     ]
     for path in required:
         require((ROOT / path).is_file(), f'Missing required file: {path}')
@@ -30,11 +32,11 @@ def validate():
         data = json.loads(path.read_text())
         require(data.get('schema_version') == 1, f'Unsupported schema: {path}')
     app = read_json('apps/patient-portal/application.json')
-    pack = read_json('packages/domain-packs/healthcare/pack.json')
-    capabilities = read_json('packages/contracts/capabilities.json')
-    contract = read_json('packages/domain-packs/healthcare/contracts/appointment-booking.json')
+    pack = read_json('stratum/domain-packs/healthcare/pack.json')
+    capabilities = read_json('stratum/domain-packs/healthcare/capabilities.json')
+    contract = read_json('stratum/domain-packs/healthcare/contracts/appointment-booking.json')
     catalog = read_json('verification/patient-portal.acceptance.json')
-    qe = read_json('platform/ai-qe/pipeline.json')
+    qe = read_json('stratum/lifecycle/ai-qe/pipeline.json')
     known = [item['id'] for item in capabilities['capabilities']]
     require(len(known) == len(set(known)), 'Duplicate capability IDs')
     require(set(app['capabilities']) <= set(known), 'Unknown application capability')
@@ -43,7 +45,7 @@ def validate():
     require(app['runtime_contract'] == capabilities['id'] + '@' + capabilities['version'], 'Runtime contract version mismatch')
     for key in ('acceptance_catalog', 'architecture'):
         require((ROOT / 'apps/patient-portal' / app[key]).is_file(), f'Broken application reference: {key}')
-    require((ROOT / 'packages/domain-packs/healthcare' / pack['contract']).is_file(), 'Broken pack contract reference')
+    require((ROOT / 'stratum/domain-packs/healthcare' / pack['contract']).is_file(), 'Broken pack contract reference')
     ids = [case['id'] for case in catalog['scenarios']]
     require(len(ids) == len(set(ids)), 'Duplicate scenario IDs')
     require(set(ids) == set(contract['acceptance_ids']), 'Acceptance traceability mismatch')

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "stratum-capabilities",
+  "id": "healthcare-capabilities",
   "version": "0.1.0",
   "implementation_status": "planned",
   "capabilities": [

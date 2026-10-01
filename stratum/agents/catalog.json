@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "planner",
+      "model": "general",
+      "memory": "session",
+      "prompt": "planner",
+      "policy": "read-only",
+      "tools": [
+        "knowledge.search"
+      ],
+      "skills": [
+        "grounded-answer"
+      ],
+      "max_steps": 8,
+      "budget_tokens": 8192,
+      "sandbox": "restricted_unbound",
+      "can_approve": false
+    },
+    {
+      "id": "builder",
+      "model": "general",
+      "memory": "session",
+      "prompt": "builder",
+      "policy": "workspace",
+      "tools": [
+        "workspace.patch"
+      ],
+      "skills": [
+        "implement-change"
+      ],
+      "max_steps": 8,
+      "budget_tokens": 8192,
+      "sandbox": "restricted_unbound",
+      "can_approve": false
+    },
+    {
+      "id": "verifier",
+      "model": "general",
+      "memory": "session",
+      "prompt": "verifier",
+      "policy": "read-only",
+      "tools": [
+        "verification.run"
+      ],
+      "skills": [
+        "verify-change"
+      ],
+      "max_steps": 8,
+      "budget_tokens": 8192,
+      "sandbox": "restricted_unbound",
+      "can_approve": false
+    },
+    {
+      "id": "assistant",
+      "model": "general",
+      "memory": "session",
+      "prompt": "assistant",
+      "policy": "read-only",
+      "tools": [
+        "knowledge.search",
+        "capability.read"
+      ],
+      "skills": [
+        "grounded-answer"
+      ],
+      "max_steps": 8,
+      "budget_tokens": 8192,
+      "sandbox": "restricted_unbound",
+      "can_approve": false
+    }
+  ]
+}

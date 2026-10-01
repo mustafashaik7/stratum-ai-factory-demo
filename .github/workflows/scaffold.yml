@@ -13,3 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate architecture links and sample contracts
         run: python3 scripts/validate_scaffold.py
+      - name: Exercise blueprint validator rejection paths
+        run: python3 -m unittest discover -s tests -v

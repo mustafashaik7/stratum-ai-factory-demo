@@ -1,6 +1,6 @@
 # Patient Portal — A Thin Application on Stratum
 
-**Architecture and executive progress brief | 30 September 2026 | Proposed design**
+**Architecture and executive progress brief | 1 October 2026 | Proposed design**
 
 ## Purpose and strategic importance
 
@@ -11,6 +11,16 @@ The portal is the first thin reference application on **Stratum**, the reusable 
 The proposed value combines patient self-service with operational learning: patients complete a defined task, service teams see where completion fails, and approved improvements move through a consistent delivery process.
 
 **Current position:** architecture, booking scope, example configuration, and ten acceptance scenarios are drafted. Application code, executed tests, live integrations, and realized benefits remain to be demonstrated.
+
+## Place in the Cloud–Core–Edge architecture
+
+The portal sits at the application edge and consumes Stratum's core capability APIs. Optional cloud services are selected and operated by Stratum. The portal has no model credentials, agent runtime, retrieval index, tool broker, or quality pipeline of its own.
+
+![Cloud–Core–Edge solution model](../../docs/diagrams/stratum-solution-architecture.svg)
+
+The core hosts the healthcare domain pack, scheduling adapter, workflow state, authorization, AI assistance, and shared telemetry. The portal renders available slots, requests confirmation, and displays the authoritative result. Enterprise scheduling remains the source of truth. An unavailable optional AI service must not prevent deterministic booking when scheduling and identity services are healthy.
+
+The deployment sequence is **Deploy** a synthetic booking journey, **Interconnect** approved identity and scheduling services, then **Extend** to further applications or sites after evidence supports expansion. The portal stays equally thin at each stage.
 
 ## Goals
 
@@ -173,4 +183,4 @@ The ten scenarios cover successful booking, patient isolation, retries, competin
 
 The next step is a bounded synthetic demonstration. Leadership alignment is needed on the target care setting, accountable product and operations owners, implementation capacity, and approved environment. Pilot investment should depend on demonstrated reliability, feasible integrations, and a measurable operational opportunity.
 
-**Companion:** [Stratum platform architecture](../../Architecture.md).
+**Companion:** [Stratum platform architecture](../../stratum/Architecture.md).

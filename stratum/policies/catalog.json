@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "read-only",
+      "allow_effects": [
+        "read"
+      ],
+      "default": "deny",
+      "approval": "none",
+      "network": "broker_only"
+    },
+    {
+      "id": "workspace",
+      "allow_effects": [
+        "read",
+        "workspace_write"
+      ],
+      "default": "deny",
+      "approval": "approved_task",
+      "network": "broker_only"
+    },
+    {
+      "id": "user-confirmation",
+      "allow_effects": [
+        "external_write"
+      ],
+      "default": "deny",
+      "approval": "authenticated_subject_bound_proposal",
+      "network": "broker_only"
+    },
+    {
+      "id": "release-approval",
+      "allow_effects": [
+        "release"
+      ],
+      "default": "deny",
+      "approval": "independent_human_release",
+      "network": "broker_only"
+    }
+  ]
+}

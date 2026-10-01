@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "release-manifest",
+      "artifact_store": "unbound",
+      "required_versions": [
+        "application",
+        "domain_pack",
+        "workflow",
+        "agent",
+        "prompt",
+        "model",
+        "tools",
+        "policy",
+        "knowledge_index",
+        "evaluation_suite"
+      ],
+      "promotion": "digest_bound_evidence_and_human_approval"
+    }
+  ]
+}

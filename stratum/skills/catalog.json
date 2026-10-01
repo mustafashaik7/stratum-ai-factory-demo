@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "grounded-answer",
+      "tools": [
+        "knowledge.search"
+      ],
+      "output": "answer_with_source_references"
+    },
+    {
+      "id": "implement-change",
+      "tools": [
+        "workspace.patch"
+      ],
+      "output": "candidate_revision"
+    },
+    {
+      "id": "verify-change",
+      "tools": [
+        "verification.run"
+      ],
+      "output": "evidence_references"
+    }
+  ]
+}
